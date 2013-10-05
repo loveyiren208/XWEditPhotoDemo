@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XWViewController : UIViewController
+@interface XWViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
+- (IBAction)pick:(id)sender;
 
 @end
