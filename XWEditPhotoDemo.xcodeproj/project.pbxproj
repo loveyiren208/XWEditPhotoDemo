@@ -21,6 +21,10 @@
 		8B11041D17FF9A4400F922C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1103FF17FF9A4400F922C3 /* UIKit.framework */; };
 		8B11042517FF9A4400F922C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B11042317FF9A4400F922C3 /* InfoPlist.strings */; };
 		8B11042717FF9A4400F922C3 /* XWEditPhotoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11042617FF9A4400F922C3 /* XWEditPhotoDemoTests.m */; };
+		8B11043317FFCE3E00F922C3 /* XWPhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11043117FFCE3E00F922C3 /* XWPhotoEditorViewController.m */; };
+		8B11043417FFCE3E00F922C3 /* XWPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11043217FFCE3E00F922C3 /* XWPhotoEditorViewController.xib */; };
+		8B11043817FFD1DB00F922C3 /* XWEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11043717FFD1DB00F922C3 /* XWEditPhotoViewController.m */; };
+		8B9C86841800F9DE005BEDF3 /* XWCropWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C86831800F9DE005BEDF3 /* XWCropWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		8B11042217FF9A4400F922C3 /* XWEditPhotoDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XWEditPhotoDemoTests-Info.plist"; sourceTree = "<group>"; };
 		8B11042417FF9A4400F922C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B11042617FF9A4400F922C3 /* XWEditPhotoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWEditPhotoDemoTests.m; sourceTree = "<group>"; };
+		8B11043017FFCE3E00F922C3 /* XWPhotoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPhotoEditorViewController.h; sourceTree = "<group>"; };
+		8B11043117FFCE3E00F922C3 /* XWPhotoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPhotoEditorViewController.m; sourceTree = "<group>"; };
+		8B11043217FFCE3E00F922C3 /* XWPhotoEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XWPhotoEditorViewController.xib; sourceTree = "<group>"; };
+		8B11043617FFD1DB00F922C3 /* XWEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWEditPhotoViewController.h; sourceTree = "<group>"; };
+		8B11043717FFD1DB00F922C3 /* XWEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWEditPhotoViewController.m; sourceTree = "<group>"; };
+		8B9C86821800F9DE005BEDF3 /* XWCropWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCropWindow.h; sourceTree = "<group>"; };
+		8B9C86831800F9DE005BEDF3 /* XWCropWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCropWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +128,10 @@
 				8B11040D17FF9A4400F922C3 /* Main.storyboard */,
 				8B11041017FF9A4400F922C3 /* XWViewController.h */,
 				8B11041117FF9A4400F922C3 /* XWViewController.m */,
+				8B11043517FFD1AD00F922C3 /* EditPhoto */,
+				8B11043017FFCE3E00F922C3 /* XWPhotoEditorViewController.h */,
+				8B11043117FFCE3E00F922C3 /* XWPhotoEditorViewController.m */,
+				8B11043217FFCE3E00F922C3 /* XWPhotoEditorViewController.xib */,
 				8B11041317FF9A4400F922C3 /* Images.xcassets */,
 				8B11040217FF9A4400F922C3 /* Supporting Files */,
 			);
@@ -150,6 +165,17 @@
 				8B11042317FF9A4400F922C3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B11043517FFD1AD00F922C3 /* EditPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				8B11043617FFD1DB00F922C3 /* XWEditPhotoViewController.h */,
+				8B11043717FFD1DB00F922C3 /* XWEditPhotoViewController.m */,
+				8B9C86821800F9DE005BEDF3 /* XWCropWindow.h */,
+				8B9C86831800F9DE005BEDF3 /* XWCropWindow.m */,
+			);
+			name = EditPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +258,7 @@
 				8B11041417FF9A4400F922C3 /* Images.xcassets in Resources */,
 				8B11040617FF9A4400F922C3 /* InfoPlist.strings in Resources */,
 				8B11040F17FF9A4400F922C3 /* Main.storyboard in Resources */,
+				8B11043417FFCE3E00F922C3 /* XWPhotoEditorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +279,10 @@
 			files = (
 				8B11040817FF9A4400F922C3 /* main.m in Sources */,
 				8B11041217FF9A4400F922C3 /* XWViewController.m in Sources */,
+				8B11043817FFD1DB00F922C3 /* XWEditPhotoViewController.m in Sources */,
 				8B11040C17FF9A4400F922C3 /* XWAppDelegate.m in Sources */,
+				8B9C86841800F9DE005BEDF3 /* XWCropWindow.m in Sources */,
+				8B11043317FFCE3E00F922C3 /* XWPhotoEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +491,7 @@
 				8B11042C17FF9A4400F922C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B11042D17FF9A4400F922C3 /* Build configuration list for PBXNativeTarget "XWEditPhotoDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +500,7 @@
 				8B11042F17FF9A4400F922C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

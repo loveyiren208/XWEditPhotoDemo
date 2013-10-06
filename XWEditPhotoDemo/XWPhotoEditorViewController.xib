@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XWPhotoEditorViewController">
+            <connections>
+                <outlet property="cropWindow" destination="x3l-0H-F6m" id="wSH-r1-CnC"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3l-0H-F6m" customClass="XWCropWindow">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POB-kG-4Eu">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" id="Hau-zQ-Z7c">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9FS-ZY-zG3">
+                                <rect key="frame" x="16" y="7" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.4279718018" green="0.029822266430000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="uD6-g2-7qG"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="x7F-Bi-zkR"/>
+                        <barButtonItem style="plain" id="Gu7-QX-pMm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5kD-Jc-8XF">
+                                <rect key="frame" x="261" y="7" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" red="0.4279718018" green="0.029822266430000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="ocU-C3-BHs"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="C0n-6S-3zo"/>
+                <constraint firstItem="x3l-0H-F6m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Lir-Pu-rSX"/>
+                <constraint firstItem="x3l-0H-F6m" firstAttribute="top" secondItem="1" secondAttribute="top" id="Nre-NS-VmI"/>
+                <constraint firstAttribute="trailing" secondItem="x3l-0H-F6m" secondAttribute="trailing" id="h6g-GJ-4yk"/>
+                <constraint firstItem="POB-kG-4Eu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="neW-zt-Z8z"/>
+                <constraint firstAttribute="trailing" secondItem="POB-kG-4Eu" secondAttribute="trailing" id="oGB-fX-mFB"/>
+                <constraint firstAttribute="bottom" secondItem="POB-kG-4Eu" secondAttribute="bottom" id="ve6-Cj-Svs"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

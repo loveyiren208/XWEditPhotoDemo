@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "XWPhotoEditorViewController.h"
 
-@interface XWViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
+@interface XWViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,XWFinishEditPhoto>
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 - (IBAction)pick:(id)sender;
 
