@@ -22,16 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     _imgPicker = [[UIImagePickerController alloc] init];
     _library = [[ALAssetsLibrary alloc] init];
-    _photoEditor = [[XWPhotoEditorViewController alloc] initWithNibName:@"XWPhotoEditorViewController" bundle:nil];
-   // _photoEditor.cropSize = CGSizeMake(320, 320);
-    
-    _photoEditor.panEnabled = YES;
-    _photoEditor.scaleEnabled = YES;
-    _photoEditor.tapToResetEnabled = YES;
-    _photoEditor.rotateEnabled = NO;
-    _photoEditor.delegate = self;
-    _photoEditor.cropSize = CGSizeMake(200, 220);
-}
+    }
 
 - (void)didReceiveMemoryWarning
 {
@@ -54,6 +45,16 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    _photoEditor = [[XWPhotoEditorViewController alloc] initWithNibName:@"XWPhotoEditorViewController" bundle:nil];
+    // _photoEditor.cropSize = CGSizeMake(320, 320);
+    
+    _photoEditor.panEnabled = YES;
+    _photoEditor.scaleEnabled = YES;
+    _photoEditor.tapToResetEnabled = YES;
+    _photoEditor.rotateEnabled = NO;
+    _photoEditor.delegate = self;
+    _photoEditor.cropSize = CGSizeMake(200, 220);
+
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     NSURL *assetURL = [info objectForKey:UIImagePickerControllerMediaURL];
@@ -95,10 +96,8 @@
 #pragma mark UIActionSheetDelegate Methods
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 0) {
-        NSLog(@"press 0");
         [self showImagePicker:UIImagePickerControllerSourceTypePhotoLibrary];
     } else if (buttonIndex == 1) {
-        NSLog(@"press 1");
         [self showImagePicker:UIImagePickerControllerSourceTypeCamera];
     }
 }

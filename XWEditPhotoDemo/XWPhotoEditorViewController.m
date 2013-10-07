@@ -19,7 +19,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.cropSize = CGSizeMake(320, 320);
         self.minimumScale = 0.2;
         self.maximumScale = 10;
     }
@@ -36,6 +35,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// waiting start
+- (void)startTransformHook
+{
+    [super startTransformHook];
+    [_indicator startAnimating];
+    [_cancelButton setEnabled:NO];
+    [_selectButton setEnabled:NO];
+}
+
+- (void)endTransformHook{
+    [super endTransformHook];
+    [_indicator stopAnimating];
+    [_cancelButton setEnabled:YES];
+    [_selectButton setEnabled:YES];
 }
 
 @end

@@ -45,5 +45,6 @@
 
 // redo the photo. photo will show in the middle
 -(void)reset:(BOOL)animated;
-
+- (void)startTransformHook;
+- (void)endTransformHook;
 @end

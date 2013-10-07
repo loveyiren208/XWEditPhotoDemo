@@ -96,14 +96,27 @@ static const CGFloat kDefaultCropHeight = 320;
     self.tapGestureRecognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:self.tapGestureRecognizer];
     
+    [self setUpGestures];
+    
+}
+
+- (void) setUpGestures{
     // accroding to parameters to enable gestures
     self.panGestureRecognizer.enabled = self.panEnabled;
     self.pinchGestureRecognizer.enabled = self.scaleEnabled;
     self.rotationGestureRecognizer.enabled = self.rotateEnabled;
     self.tapGestureRecognizer.enabled = self.tapToResetEnabled;
-    
 }
 
+// disenableAllGesture
+// eg: when finish edit photo and upload to server.
+// gesture should be disenabled
+- (void) disenableAllGesture{
+    self.panGestureRecognizer.enabled = NO;
+    self.pinchGestureRecognizer.enabled = NO;
+    self.rotationGestureRecognizer.enabled = NO;
+    self.tapGestureRecognizer.enabled = NO;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -247,7 +260,9 @@ static const CGFloat kDefaultCropHeight = 320;
             [self.delegate finish:image didCancel:NO];
 
             // end waiting
-            [self endTransformHook];
+            // this should be called in its delegate finish method.
+            // eg: when finish uploading, call this method
+            //[self endTransformHook];
         });
     });
     
@@ -255,12 +270,12 @@ static const CGFloat kDefaultCropHeight = 320;
 // waiting start
 - (void)startTransformHook
 {
-    
+    [self disenableAllGesture];
 }
 // waiting end
 - (void)endTransformHook
 {
-    
+    [self setUpGestures];
 }
 
 // when finish edit photo and cancel
