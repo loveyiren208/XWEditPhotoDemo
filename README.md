@@ -18,6 +18,4 @@ XWEditPhotoDemo
 
 ![start page](https://github.com/loveyiren208/XWEditPhotoDemo/blob/master/images/5.png?raw=true)
 
-![start page](https://github.com/loveyiren208/XWEditPhotoDemo/blob/master/images/6.png?raw=true)
-
 ![start page](https://github.com/loveyiren208/XWEditPhotoDemo/blob/master/images/7.png?raw=true)
