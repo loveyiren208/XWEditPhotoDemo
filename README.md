@@ -8,6 +8,6 @@ XWEditPhotoDemo
 ####3. add this new photo to library and set it to first page
 
 
-![start page](http://www.flickr.com/photos/104481933@N02/10128394766/)
+![start page](github.com/loveyiren208/XWEditPhotoDemo/tree/master/images/Photo Oct 06, 8 12 44 PM.png)
 
 
