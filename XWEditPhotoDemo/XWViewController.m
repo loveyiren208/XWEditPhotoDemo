@@ -46,14 +46,15 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     _photoEditor = [[XWPhotoEditorViewController alloc] initWithNibName:@"XWPhotoEditorViewController" bundle:nil];
-    // _photoEditor.cropSize = CGSizeMake(320, 320);
     
+    // set photo editor value
     _photoEditor.panEnabled = YES;
     _photoEditor.scaleEnabled = YES;
     _photoEditor.tapToResetEnabled = YES;
     _photoEditor.rotateEnabled = NO;
     _photoEditor.delegate = self;
-    _photoEditor.cropSize = CGSizeMake(200, 220);
+    // crop window's value
+    _photoEditor.cropSize = CGSizeMake(300, 300);
 
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
