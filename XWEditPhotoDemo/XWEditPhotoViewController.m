@@ -361,9 +361,10 @@ static const CGFloat kDefaultCropHeight = 320;
                     [UIView animateWithDuration:kAnimationIntervalTransform delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         self.imageView.transform = transform;
                     } completion:^(BOOL finished) {
-                        [self doCheckBounds];
                         self.view.userInteractionEnabled = YES;
                         scaleNow = scale;
+                        [self doCheckBounds];
+
                     }];
                 } else {
                     [self doCheckBounds];
