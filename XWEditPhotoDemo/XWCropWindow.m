@@ -16,7 +16,7 @@
 - (void) initialize{
     // set clear color. thus the photo can show in the screen without mask
     self.opaque = NO;
-    self.layer.opacity = 0.7;
+    self.layer.opacity = 0.5;
     self.backgroundColor = [UIColor clearColor];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];

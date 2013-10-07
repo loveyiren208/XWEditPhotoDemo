@@ -48,7 +48,7 @@
                     </items>
                 </toolbar>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="C0n-6S-3zo"/>
                 <constraint firstItem="x3l-0H-F6m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Lir-Pu-rSX"/>

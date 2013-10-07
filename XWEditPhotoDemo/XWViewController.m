@@ -72,6 +72,7 @@
 
 -(void)finish:(UIImage *)image didCancel:(BOOL)cancel {
     if (!cancel) {
+        // store this new picture in the library
         [_library
          writeImageToSavedPhotosAlbum:[image CGImage]
          orientation:(ALAssetOrientation)image.imageOrientation
