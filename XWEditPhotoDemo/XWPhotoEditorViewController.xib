@@ -29,10 +29,14 @@
                         </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="436" id="HxD-Ef-Sby"/>
+                    </constraints>
                 </view>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POB-kG-4Eu">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POB-kG-4Eu">
                     <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <items>
                         <barButtonItem title="Cancel" id="mOB-6t-kFV">
                             <connections>
@@ -50,9 +54,9 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="C0n-6S-3zo"/>
                 <constraint firstItem="x3l-0H-F6m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Lir-Pu-rSX"/>
                 <constraint firstItem="x3l-0H-F6m" firstAttribute="top" secondItem="1" secondAttribute="top" id="Nre-NS-VmI"/>
+                <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="b3X-vq-5RF"/>
                 <constraint firstAttribute="trailing" secondItem="x3l-0H-F6m" secondAttribute="trailing" id="h6g-GJ-4yk"/>
                 <constraint firstItem="POB-kG-4Eu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="neW-zt-Z8z"/>
                 <constraint firstAttribute="trailing" secondItem="POB-kG-4Eu" secondAttribute="trailing" id="oGB-fX-mFB"/>

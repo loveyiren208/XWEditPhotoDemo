@@ -20,7 +20,7 @@
  */
 @interface XWEditPhotoViewController : UIViewController<UIGestureRecognizerDelegate>
 
-@property(strong,nonatomic) IBOutlet id<XWFinishEditPhoto> delegate;
+@property(weak) IBOutlet id<XWFinishEditPhoto> delegate;
 
 // pass the image which you want to edit
 @property (nonatomic,copy) UIImage *sourceImage;
