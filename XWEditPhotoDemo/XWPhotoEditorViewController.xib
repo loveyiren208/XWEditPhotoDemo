@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XWPhotoEditorViewController">
@@ -29,9 +29,6 @@
                         </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="436" id="HxD-Ef-Sby"/>
-                    </constraints>
                 </view>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POB-kG-4Eu">
                     <rect key="frame" x="0.0" y="436" width="320" height="44"/>
@@ -54,13 +51,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="x3l-0H-F6m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Lir-Pu-rSX"/>
-                <constraint firstItem="x3l-0H-F6m" firstAttribute="top" secondItem="1" secondAttribute="top" id="Nre-NS-VmI"/>
-                <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="b3X-vq-5RF"/>
-                <constraint firstAttribute="trailing" secondItem="x3l-0H-F6m" secondAttribute="trailing" id="h6g-GJ-4yk"/>
+                <constraint firstItem="POB-kG-4Eu" firstAttribute="top" secondItem="x3l-0H-F6m" secondAttribute="bottom" id="Npi-7Q-xYb"/>
+                <constraint firstItem="x3l-0H-F6m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Vxr-uv-RtM"/>
+                <constraint firstAttribute="trailing" secondItem="x3l-0H-F6m" secondAttribute="trailing" id="ZgL-Zb-3Pk"/>
                 <constraint firstItem="POB-kG-4Eu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="neW-zt-Z8z"/>
                 <constraint firstAttribute="trailing" secondItem="POB-kG-4Eu" secondAttribute="trailing" id="oGB-fX-mFB"/>
                 <constraint firstAttribute="bottom" secondItem="POB-kG-4Eu" secondAttribute="bottom" id="ve6-Cj-Svs"/>
+                <constraint firstItem="x3l-0H-F6m" firstAttribute="top" secondItem="1" secondAttribute="top" id="zvY-Bg-chz"/>
             </constraints>
         </view>
     </objects>
